@@ -2,7 +2,7 @@
 Text: #2b2b2b
 Primary: #2C6E49 - dark spring green
 Secondary: #175934 (unvisited links)
-Third: #053C1D- (for hover link)
+tertiary-color:  #053C1D- (for hover link)
 Visited links: #6D2C51
  */
 
@@ -10,6 +10,7 @@ Visited links: #6D2C51
     --primary-color: #2C6E49;
     --secondary-color: #175934;
     --tertiary-color: #053C1D;
+    --footer-color: #70A788;
     --text-color: #2b2b2b;
     --visited-link: #6D2C51;
     --font-weight-headings: 700;
@@ -20,6 +21,7 @@ Visited links: #6D2C51
 }
 
 /************* Default Text Elements ********/
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -128,6 +130,7 @@ a:focus {
 main {
     max-width: 770px;
     margin: 0 auto;
+    min-height: 65vh;
 }
 
 /******** End Main Section ********/
@@ -297,6 +300,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
+   /* background-color: var(--footer-color); */
 }
 
 /******** End Footer ********/
