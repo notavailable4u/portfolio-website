@@ -130,7 +130,7 @@ a:focus {
 main {
     max-width: 770px;
     margin: 0 auto;
-    min-height: 65vh;
+    /* min-height: 65vh; */
 }
 
 /******** End Main Section ********/
