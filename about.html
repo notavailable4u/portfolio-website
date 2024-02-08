@@ -18,22 +18,25 @@
 <body>
     <header class="page-header">
         <img src="img/logo-138x100.png" alt="" class="page-header__item">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item--active">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work Samples</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <ul role="menubar">
+                    <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="presentation"><a href="about.html" role="menuitem" class="nav-links--active">About Me</a>
+                    </li>
+                    <li role="presentation"><a href="work.html" role="menuitem">Work Samples</a></li>
+                    <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -44,8 +47,12 @@
             I.T. Support industry covering a wide array of topics, including the creation and maintenance of a few "old
             school", static websites, as well as maintaining and updating WordPress based websites. I am looking to
             transition to the web developer industry exclusively and I am currently enrolled in the online Full-Stack
-            Web Development Program at CareerFoundry. Below is a table with a brief synopsis of the languages I am
-            familiar with and my current level of experience in each.</p>
+            Web Development Program at CareerFoundry.
+        </p>
+        <p>
+            Below is a table with a brief synopsis of the languages I am familiar with and my current level of
+            experience in each.
+        </p>
         <table class="about-table">
             <thead>
                 <tr>

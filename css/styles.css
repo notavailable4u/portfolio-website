@@ -10,7 +10,7 @@ Visited links: #6D2C51
     --primary-color: #2C6E49;
     --secondary-color: #175934;
     --tertiary-color: #053C1D;
-    --footer-color: #70A788;
+    --footer-color: #70A788;/*maybe? - also nav hover*/
     --text-color: #2b2b2b;
     --visited-link: #6D2C51;
     --font-weight-headings: 700;
@@ -26,8 +26,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    /* Sets the font size to 16px*/
     line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h1 {
@@ -88,41 +90,56 @@ a:active {
     text-align: right;
 }
 
-.navigation-list {
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
     display: inline;
-    list-style-type: none;
-    background-color: var(--tertiary-color);
-    padding: 5px;
+    float: right;
+    font-size: 18px;
 }
 
-.navigation-list a:link {
+.nav>.nav-links>ul li a {
+    display: block;
+    padding: 0 8px;
     color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    /*     text-decoration: none; */
 }
 
-.navigation-list a:visited {
-    color: #fff;
+.nav>.nav-links>ul {
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
 }
 
-.navigation-list a:hover,
-a:focus {
-    text-decoration: none;
-    background-color: #70A788;
-    color: #fff;
-}
-
-.navigation-list li {
+.nav>.nav-links>ul li {
     display: inline-block;
-    margin: 10px;
+    background-color: var(--primary-color);
 }
 
-.navigation-list__item {
-    background-color: var(--tertiary-color);
+.nav>.nav-links>ul li a:hover {
+    background-color: var(--footer-color);
+    border-radius: 5px;
 }
 
-.navigation-list__item--active {
+.nav>#nav-check {
+    display: none;
+}
+
+.nav-links--active {
     text-decoration: none;
 }
-
 /******** End Header / Nav Bar ********/
 
 
@@ -130,9 +147,8 @@ a:focus {
 main {
     max-width: 770px;
     margin: 0 auto;
-    min-height: 65vh;
+    flex: 1;
 }
-
 /******** End Main Section ********/
 
 
@@ -146,13 +162,13 @@ main {
     float: left;
     width: 150px;
     margin-right: 40px;
+    margin-top: 10px;
     border-radius: 50%;
 }
+/******** END Profile Section Home Page  ********/
 
-/******** Profile Section Home Page  ********/
 
-
-/******* Grid *******/
+/******* Grid Work Page *******/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -162,8 +178,7 @@ main {
 .grid__item {
     background-color: lightgray;
 }
-
-/*******End Grid *******/
+/*******End Grid Work Page*******/
 
 
 /********Contact Form Grid ********/
@@ -191,6 +206,8 @@ textarea {
 
 #contact-form {
     display: grid;
+    border: 3px #70A788 solid;
+    padding: 10px;
     gap: 10px;
     grid-template-areas:
         'email telephone'
@@ -238,10 +255,16 @@ button:focus {
 /******** About Page ********/
 .about-table {
     text-align: center;
+    width: 100%;
 }
 
 .about-table th {
     padding: 5px;
+    background-color: var(--footer-color);
+}
+
+.about-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
 
 @keyframes color-change {
@@ -300,10 +323,83 @@ button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
-   /* background-color: var(--footer-color); */
+    /* background-color: var(--footer-color); */
+}
+/******** End Footer ********/
+
+/***************** Nav Media Queries ****************/
+
+@media (max-width:750px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    /*   */
+
+    .nav>.nav-links>ul li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+
+    }
+
+    .nav>.nav-links>ul li a {
+        margin-left: 40%;
+    }
+
+    /*   */
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
 }
 
-/******** End Footer ********/
+/***************** END Nav Media Queries ****************/
+
 
 /******** Media Queries *******/
 @media all and (max-width: 500px) {
