@@ -82,7 +82,7 @@ a:active {
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+    flex: 0 1 100px;
 }
 
 .page-header__item:last-child {
@@ -145,7 +145,7 @@ a:active {
 
 /******** Main Section ********/
 main {
-    max-width: 770px;
+    max-width: 900px;
     margin: 0 auto;
     flex: 1;
 }
@@ -171,13 +171,23 @@ main {
 /******* Grid Work Page *******/
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .grid__item {
     background-color: lightgray;
 }
+
+.grid__item p, h2 {
+padding-left: 10px;
+padding-right: 10px;}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 /*******End Grid Work Page*******/
 
 
