@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: var(--font-weight-headings);
 }
 
@@ -168,7 +168,7 @@ main {
 /******** END Profile Section Home Page  ********/
 
 
-/******* Grid Work Page *******/
+/******* Work Page - Grid *******/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -179,16 +179,43 @@ main {
     background-color: lightgray;
 }
 
-.grid__item p, h2 {
+.grid__item h2, h3, p {
 padding-left: 10px;
-padding-right: 10px;}
+padding-right: 10px;
+}
+
+.grid__item h2 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.grid__item h2 + h3{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.project-details h3 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.project-details  p {
+    margin-top: 3px;
+}
+
+.project-details  p +p {
+    margin-top: 0;
+}
+
 
 .responsive {
     width: 100%;
     height: auto;
+    border: 2px solid #053C1D;
 }
 
-/*******End Grid Work Page*******/
+/*******End Work Page - Grid *******/
 
 
 /********Contact Form Grid ********/

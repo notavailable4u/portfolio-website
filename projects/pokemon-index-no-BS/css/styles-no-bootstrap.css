@@ -1,0 +1,147 @@
+:root {
+  --primary-color: #2C6E49;
+  --secondary-color: #175934;
+  --tertiary-color: #053C1D;
+  --footer-color: #70A788;/*maybe? - also nav hover*/
+  --text-color: #2b2b2b;
+  --visited-link: #6D2C51;
+  --font-weight-headings: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/************* Default Text Elements ********/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight-headings);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-headings);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight-headings);
+}
+
+/******** End Default Text Elements ********/
+
+/******** Main Section ********/
+main {
+  max-width: 770px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+main h2{
+text-align: center;
+}
+
+p {text-align: center;}
+/******** End Main Section ********/
+
+
+/******** Pokemon List and Buttons *******/
+ul.pokemon-list {
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+}
+ul li {
+display: inline;
+}
+
+.ulButton {
+  background-color: #008CBA;
+  text-align: center;
+  width: 100%;
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: var(--font-weight-headings);
+  margin: 4px 2px;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+}
+
+.ulButton:hover {
+  background-color: #fff;
+  color: #008CBA;
+}
+/******** END Pokemon List and Buttons *******/
+
+/******* Modal ********/
+#modal-container {
+display: none;
+}
+
+#modal-container.is-visible {
+position: fixed;
+padding: 20px;
+box-sizing: border-box;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+
+/* to show it above other content */
+z-index: 999; 
+
+/* to allow scrolling if the screen is not high enough*/
+overflow: auto; 
+
+/* this is used to center the modal */
+display: grid;
+text-align: center;
+}
+
+.modal {
+margin: auto;
+display: inline-block;
+box-sizing: border-box;
+background: #fff;
+padding: 15px;
+width: 100%;
+max-width: 700px;
+text-align: center;
+}
+
+.modal-close {
+float: right;
+/*-webkit-appearance: none;*/
+border: 0;
+background: none;
+color: #fff;
+text-decoration: underline;
+margin-top: 5px;
+cursor: pointer;
+}
+
+.modal h1 {
+margin-top: 0;
+text-align: center;
+background-color: #008CBA;
+color: #fff;
+}
+
+.modal p {
+margin-bottom: 0;
+font-weight: 700;
+text-align: center;
+}
