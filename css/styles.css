@@ -145,7 +145,7 @@ a:active {
 
 /******** Main Section ********/
 main {
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
     flex: 1;
 }
@@ -177,6 +177,8 @@ main {
 
 .grid__item {
     background-color: lightgray;
+    align-items: stretch;
+
 }
 
 .grid__item h2, h3, p {
@@ -206,13 +208,15 @@ padding-right: 10px;
 
 .project-details  p +p {
     margin-top: 0;
+    margin-bottom: 25px;
 }
 
 
 .responsive {
     width: 100%;
-    height: auto;
-    border: 2px solid #053C1D;
+    height: 30%;
+    border: 2px solid #175934;
+    object-fit: scale-down;
 }
 
 /*******End Work Page - Grid *******/
@@ -304,51 +308,6 @@ button:focus {
     background-color: #f2f2f2;
 }
 
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 /******** About Page End ********/
 
