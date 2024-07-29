@@ -13,47 +13,124 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="page-header">
-        <img src="img/logo-138x100.png" alt="" class="page-header__item">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-btn">
-                <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div class="nav-links">
-                <ul role="menubar">
-                    <li role="presentation"><a href="index.html" role="menuitem" class="nav-links--active">Home</a></li>
-                    <li role="presentation"><a href="about.html" role="menuitem">About Me</a></li>
-                    <li role="presentation"><a href="work.html" role="menuitem">Work</a></li>
-                    <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
+
+    <layout-grid>
+        <header class="header">
+            <nav class="nav">
+                <input type="checkbox" id="nav-check">
+                <nav-header class="nav-header">
+                    <nav-logo class="nav-title">
+                        PTNG
+                    </nav-logo>
+                </nav-header>
+                <burger-menu class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </burger-menu>
+
+                <ul class="nav-list">
+                    <li role="presentation"><a href="index.html" role="menuitem" id="active">Home</a></li>
+                    <li role="presentation"><a href="work.html" role="menuitem">Work Samples</a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
 
-    </header>
+        </header>
 
-    <main>
-        <img src="img/ptng-memoji.png" class="profile_picture" alt="Patrick Gannon Profile Picture">
-        <h1>Patrick T.N. Gannon - Portfolio Site</h1>
-        <p>My name is Patrick and I am currently taking classes to become a Full Stack Web Developer. This is
-            the "Very Early Gestation Stage" version of my Portfolio site. Just a tiny little zygote of site really.</p>
-    </main>
+        <main class="main-content">
+            <h1>Patrick T.N. Gannon - Portfolio Site</h1>
+            <p>This is the "Very Early Gestation Stage" version of my Portfolio site. Just a tiny little zygote of site
+                really.
+            </p>
+            <h2>About Me</h2>
+            <p>
+                My name is Patrick T. N. Gannon and this is my portfolio site. I have over 30 years of experience
+                working in
+                the
+                I.T. Support industry covering a wide array of topics, including the creation and maintenance of a few
+                "old
+                school", static websites, as well as maintaining and updating WordPress based websites. I am looking to
+                transition to the web developer industry exclusively and I am currently enrolled in the online
+                Full-Stack
+                Web Development Program at CareerFoundry.
+            </p>
+            <p><a href="./work.html">View a sample of my work.</a></p>
+            <p>
+                Below is a table with a brief synopsis of the languages I am familiar with and my current level of
+                experience in each.
+            </p>
+            <table class="about-table">
+                <thead>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Years of Experience</th>
+                        <th>Level of Expertise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>3</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>3</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>less than 1 year</td>
+                        <td>Noob</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>less than 1 year</td>
+                        <td>Noob</td>
+                    </tr>
 
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <img src="img/github_icon.svg" alt="Github">
-            <img src="img/linkedin_logo_icon.svg" alt="LinkedIn">
-        </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
+                </tbody>
+            </table>
+
+        </main>
+
+        <section class="left-sidebar">
+            <img src="img/logo-large.png" alt="">
+            <contact-info>
+                <h2>Contact Info</h2>
+                <img src="./img/ptng-memoji.png" alt="memoji" class="responsive">
+                <p>Patrick T. N. Gannon</p>
+                <p>clnstart@protonmail.com</p>
+                <p><a href="tel:17088556742" aria-label="7 0 8. 8 5 5. 6 7 4 2">1.708.855.6742</a></p>
+                <p><a href="https://github.com/notavailable4u" target="_blank" class="fa"><i class="fa fa-github"
+                            style="font-size:48px;color:#2C6E49" title="GitHub"></i></a> <a
+                        href="https://www.linkedin.com/in/patrick-g-4294b0232/" target="_blank" class="fa"><i
+                            class="fa fa-linkedin-square" style="font-size:48px;color:#2C6E49" title="LinkedIn"></i></a></p>
+            </contact-info>
+        </section>
+
+        <footer class="footer">
+            <p>Find me on</p>
+            <social-media-icons>
+                <a href="https://github.com/notavailable4u" target="_blank" class="fa" title="GitHub"><i class="fa fa-github"
+                    style="font-size:48px;color:#2C6E49"></i></a> <a
+                href="https://www.linkedin.com/in/patrick-g-4294b0232/" target="_blank" class="fa"><i
+                    class="fa fa-linkedin-square" style="font-size:48px;color:#2C6E49" title="LinkedIn"></i></a>
+            </social-media-icons>
+        </footer>
+
+    </layout-grid>
 
 </body>
 

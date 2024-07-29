@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Patrick T. N. Gannon - Work Samples</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick T. N. Gannon - Work Samples</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,227 +13,274 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="page-header">
-        <img src="img/logo-138x100.png" alt="" class="page-header__item">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-btn">
-                <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div class="nav-links">
-                <ul role="menubar">
+
+    <layout-grid>
+        <header class="header">
+            <nav class="nav">
+                <input type="checkbox" id="nav-check">
+                <nav-header class="nav-header">
+                    <nav-logo class="nav-title">
+                        PTNG
+                    </nav-logo>
+                </nav-header>
+                <burger-menu class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </burger-menu>
+
+                <ul class="nav-list">
                     <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
-                    <li role="presentation"><a href="about.html" role="menuitem">About Me</a></li>
-                    <li role="presentation"><a href="work.html" role="menuitem" class="nav-links--active">Work</a></li>
-                    <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
+                    <li role="presentation"><a href="work.html" role="menuitem" id="active">Work Samples</a></li>
                 </ul>
-            </div>
-        </div>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <h1>Work Samples</h1>
-        <p>All of these projects were created as part of the curriculum for the Full Stack Web Development Program at
-            Career Foundry - one of the worst online learning platforms I've had the misfortune to experience.
-            I usually tell people I learned how to code <em>despite</em> attending Career Foundry, by which I mean, I
-            was able to complete these projects by seeking the correct information from other sources on the internet.
-            But.. on the positive side
-            ... Look! Code! .....</p>
-        <div class="grid">
-            <!-- Grid items go here -->
-            <!-- Project 1 Start -->
-            <div class="grid__item">
-                <h2>Simple JavaScript App - Pokemon Index </h2>
-                <img src="./img/Pokemon-Index-Bootstrap.png" alt="Screenshot of Pokemon Index app Home Page"
-                    class="responsive">
+        <main class="main-content">
+            <h1>Work Samples</h1>
+            <p>All of these projects were created as part of the curriculum for the Full Stack Web Development Program
+                at
+                Career Foundry - one of the worst online learning platforms I've had the misfortune to experience.
+                I usually tell people I learned how to code <em>despite</em> attending Career Foundry, by which I mean,
+                I
+                was able to complete these projects by seeking the correct information from other sources on the
+                internet.
+                But.. on the positive side
+                ... Look! Code! .....</p>
+            <!-- Project Card Section Begin -->
+            <project-cards>
 
-                <p>
-                    A simple JavaScript app that displays data from the <a href="https://pokeapi.co/"
-                        target="_blank">Pokemon API (link opens in a new tab).</a> For the first version, the
-                    requirements were to create a UI designed from scratch, without the use of any libraries or
-                    platforms. For the final version, we were required to use the Bootstraps library to create the UI.
-                </p>
-                <div class="project-details">
-                    <h3>Technologies Used:</h3>
-                    <p>
-                        JavaScript ES2023, Bootstrap 5, HTML, and CSS.
-                    </p>
-                    <h3>Project Links:</h3>
-                    <p>
-                        <a href="projects/pokemon-index-no-BS/index-no-bootstap.html">View the "Original Code -
-                            Non-Bootstrap" version of the app.</a>
-                    </p>
-                    <p>
-                        <a href="projects/pokemon-index/index.html">View the Bootstraps version of the app.</a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/notavailable4u/my-first-js-app" target="_blank">Link to project
-                            source files on hosted GtHub.</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Project 1 END -->
-            <!-- Project 2 Start -->
-            <div class="grid__item">
-                <h2>Movie Database - REST API </h2>
-                <img src="./img/Movie-API-MongoDB.png" alt="Screenshot of MongoDB portion of component"
-                    class="responsive">
-                <p>
-                    A server-side component, built using MERN (MongoDB, Express, React, Node.js) and Passport, for use
-                    with an app / website
-                    that provides information pertaining to movies.
-                </p>
-                <div class="project-details">
-                    <h3>Technologies Used:</h3>
-                    <p>
-                        JavaScript, Node.js, Express, Dotenv, Mongoose, MongoDB, Passport, Postman, Heroku.
-                    </p>
-                    <h3>Project Links:</h3>
-                    <p>
-                        <a href="https://github.com/notavailable4u/movie_api-2" target="_blank">Link to project source
-                            files
-                            on GitHub.</a>
-                    </p>
-                    <p>
-                        <a href="https://movie-api-ptng-d305c73322c3.herokuapp.com/documentation" target="_blank">Link
-                            to the Documentation listing all Endpoints. Hosted on Heroku. Link will open the Heroku site
-                            in a new tab.</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Project 2 END -->
-            <!-- Project 3 Start -->
-            <div class="grid__item">
-                <h2>"myFlix" React App</h2>
-                <img src="./img/myFlix-react-netlify.png" alt="Screenshot of myFlix SPA" class="responsive">
-                <p>
-                    Client-side interface, built using the React library, for previously created server-side code (Movie
-                    Information REST API ) of a movie themed single-page application (SPA) which is hosted on Netlify.
-                </p>
-                <div class="project-details">
-                    <h3>Technologies Used:</h3>
-                    <p>
-                        JavaScript ES2015+, Express, React, Bootstrap 5, Parcel, Netlify, Heroku, MongoDB.
-                    </p>
-                    <h3>Project Links:</h3>
-                    <p>
-                        <a href="https://github.com/notavailable4u/myFlix-client" target="_blank">Link to project source
-                            files on GitHub.</a>
-                    </p>
-                    <p>
-                        <a href="https://movie-api-pgannon.netlify.app/login" target="_blank">Link
-                            to the SPA hosted on Netlify.</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Project 3 END -->
-            <!-- Project 4 Start -->
-            <div class="grid__item">
-                <h2>"Meet" React App</h2>
-                <img src="./img/react-app-meet.png" alt="Screenshot of Meet app Home Page" class="responsive">
-                <p>
-                    The project objective was to create a serverless, progressive web application (PWA)
-                    built with React using a test-driven development (TDD) technique. The application uses the Google
-                    Calendar API to fetch upcoming events.
-                </p>
-                <div class="project-details">
-                    <h3>Technologies Used:</h3>
-                    <p>
-                        JavaScript, React, Create-React-App, Recharts, Jest, Jest-Cucumber, TDD
-                        techniques, Google Calendar API, OAuth2, Serverless Functions (AWS Lambda).
-                    </p>
-                    <h3>Project Links:</h3>
-                    <p>
-                        <a href="https://github.com/notavailable4u/meet2" target="_blank">Link to project source files
-                            on
-                            GitHub.</a>
-                    </p>
-                    <p>
-                        <a href="https://notavailable4u.github.io/meet2" target="_blank">Link to the hosted version of
+                <!--Project 1 Begin-->
+                <article class="card">
+                    <header-card>
+                        <h2>JavaScript App - Pokemon Index </h2>
+                    </header-card>
+                    <screen-shot>
+                        <img src="./img/Pokemon-Index-Bootstrap.png" alt="Screenshot of Pokemon Index app Home Page">
+                    </screen-shot>
+                    <project-summary>
+                        <p>
+                            A simple JavaScript app that displays data from the <a href="https://pokeapi.co/"
+                                target="_blank">Pokemon API (link opens in a new tab).</a> For the first version, the
+                            requirements were to create a UI designed from scratch, without the use of any libraries or
+                            platforms. For the final version, we were required to use the Bootstraps library to create
+                            the UI.
+                        </p>
+                    </project-summary>
+                    <tech-info>
+                        <h3>Technologies Used:</h3>
+                        <p>
+                            JavaScript ES2023, Bootstrap 5, HTML, and CSS.
+                        </p>
+                    </tech-info>
+                    <project-links>
+                        <h3>Project Links:</h3>
+                        <p>
+                            <a href="projects/pokemon-index-no-BS/index-no-bootstap.html">View the "Original Code -
+                                Non-Bootstrap" version of the app.</a>
+                        </p>
+                        <p>
+                            <a href="projects/pokemon-index/index.html">View the Bootstraps version of the app.</a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/notavailable4u/my-first-js-app" target="_blank">Link to project
+                                source files on hosted GtHub.</a>
+                        </p>
+                    </project-links>
+                </article>
+                <!--Project 1 End-->
+                <!--Project 2-->
+                <article class="card">
+                    <header-card>
+                        <h2>Movie Database - REST API</h2>
+                    </header-card>
+                    <screen-shot>
+                        <img src="./img/Movie-API-MongoDB.png" alt="Screenshot of MongoDB portion of component">
+                    </screen-shot>
+                    <project-summary>
+                        <p>
+                            A server-side component, built using MERN (MongoDB, Express, React, Node.js) and Passport,
+                            for use
+                            with an app / website
+                            that provides information pertaining to movies.
+                        </p>
+                    </project-summary>
+                    <tech-info>
+                        <h3>Technologies Used:</h3>
+                        <p>
+                            JavaScript, Node.js, Express, Dotenv, Mongoose, MongoDB, Passport, Postman, Heroku.
+                        </p>
+                    </tech-info>
+                    <project-links>
+                        <h3>Project Links:</h3>
+                        <p>
+                            <a href="https://github.com/notavailable4u/movie_api-2" target="_blank">Link to project
+                                source
+                                files
+                                on GitHub.</a>
+                        </p>
+                        <p>
+                            <a href="https://movie-api-ptng-d305c73322c3.herokuapp.com/documentation"
+                                target="_blank">Link
+                                to the Documentation listing all Endpoints. Hosted on Heroku. Link will open the Heroku
+                                site
+                                in a new tab.</a>
+                        </p>
+                    </project-links>
+                </article>
+                <!--Project 2 END-->
+                <!--Project 3 -->
+                <article class="card">
+                    <header-card>
+                        <h2>"myFlix" React App</h2>
+                    </header-card>
+                    <screen-shot>
+                        <img src="./img/myFlix-react-netlify.png" alt="Screenshot of myFlix SPA">
+                    </screen-shot>
+                    <project-summary>
+                        <p>
+                            Client-side interface, built using the React library, for previously created server-side
+                            code (Movie
+                            Information REST API ) of a movie themed single-page application (SPA) which is hosted on
+                            Netlify.
+                        </p>
+                    </project-summary>
+                    <tech-info>
+                        <h3>Technologies Used:</h3>
+                        <p>
+                            JavaScript ES2015+, Express, React, Bootstrap 5, Parcel, Netlify, Heroku, MongoDB.
+                        </p>
+                    </tech-info>
+                    <project-links>
+                        <h3>Project Links:</h3>
+                        <p>
+                            <a href="https://github.com/notavailable4u/myFlix-client" target="_blank">Link to project
+                                source
+                                files on GitHub.</a>
+                        </p>
+                        <p>
+                            <a href="https://movie-api-pgannon.netlify.app/login" target="_blank">Link
+                                to the SPA hosted on Netlify.</a>
+                        </p>
+                    </project-links>
+                </article>
+
+                <!--Project 3 END-->
+                <!--Project 4 -->
+                <article class="card">
+                    <header-card>
+                        <h2>"Meet" React App</h2>
+                    </header-card>
+                    <screen-shot>
+                        <img src="./img/react-app-meet.png" alt="Screenshot of Meet app Home Page">
+                    </screen-shot>
+                    <project-summary>
+                        <p>
+                            The project objective was to create a serverless, progressive web application (PWA)
+                            built with React using a test-driven development (TDD) technique. The application uses the
+                            Google
+                            Calendar API to fetch upcoming events.
+                        </p>
+                    </project-summary>
+                    <tech-info>
+                        <h3>Technologies Used:</h3>
+                        <p>
+                            JavaScript, React, Create-React-App, Recharts, Jest, Jest-Cucumber, TDD
+                            techniques, Google Calendar API, OAuth2, Serverless Functions (AWS Lambda).
+                        </p>
+                    </tech-info>
+                    <project-links>
+                        <h3>Project Links:</h3>
+                        <p>
+                            <a href="https://github.com/notavailable4u/meet2" target="_blank">Link to project source
+                                files
+                                on
+                                GitHub.</a>
+                        </p>
+                        <p>
+                            <a href="https://notavailable4u.github.io/meet2" target="_blank">Link to the hosted version
+                                of
+                                the
+                                app (requires a Google account to login).</a>
+                        </p>
+                    </project-links>
+                </article>
+                <!--Project 4 END-->
+                <!--Project 5 -->
+                <article class="card">
+                    <header-card>
+                        <h2>React-Native "Chat" App</h2>
+                    </header-card>
+                    <screen-shot>
+                        <img src="./img/chat-app.png" alt="Screenshot of React-Native Chat App">
+                    </screen-shot>
+                    <project-summary>
+                        <p>
+                            A mobile chat application built with React-Native, React-Native-Gifted-Chat, Expo, and
+                            Google
+                            Firebase.
+                        </p>
+                    </project-summary>
+                    <tech-info>
+                        <h3>Technologies Used:</h3>
+                        <p>
+                            React-Native, React-Native-Gifted-Chat, Expo, Expo Go, Google Firebase and Android-Studio.
+                        </p>
+                    </tech-info>
+                    <project-links>
+                        <h3>Project Links:</h3>
+                        <p>
+                            <a href="https://github.com/notavailable4u/chat-app" target="_blank">Link to project source
+                                files on GitHub.</a>
+                        </p>
+                        <h3>Video</h3>
+                        <p>View a short screen recording (35 seconds - MP4 file format), of a simulated conversation on
                             the
-                            app (requires a Google account to login).</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Project 4 END -->
-            <!-- Project 5 Start -->
-            <div class="grid__item">
-                <h2>React-Native "Chat" App</h2>
-                <img src="./img/chat-app.png" alt="Screenshot of React-Native Chat App" class="responsive">
-                <p>
-                    A mobile chat application built with React-Native, React-Native-Gifted-Chat, Expo, and Google
-                    Firebase.
-                </p>
-                <div class="project-details">
-                    <h3>Technologies Used:</h3>
-                    <p>
-                        React-Native, React-Native-Gifted-Chat, Expo, Expo Go, Google Firebase and Android-Studio.
-                    </p>
-                    <h3>Project Links:</h3>
-                    <p>
-                        <a href="https://github.com/notavailable4u/chat-app" target="_blank">Link to project source
-                            files on GitHub.</a>
-                    </p>
-                    <h3>Video</h3>
-                    <p>View a short screen recording (35 seconds - MP4 file format), of a simulated conversation on the
-                        app between an iPhone user (Expo Go) and an Android user (Android Studio): </p>
-                    <p>
-                        <video width="100%" height="300px" controls>
-                            <source src="./projects/native-react/chat-sample-01.mp4" type="video/mp4">
-                        </video>
-                    </p>
-                </div>
-            </div>
-            <!-- Project 5 END -->
-            <!--Project 6 Start-->
-            <div class="grid__item">
-                <h2>"myFlix" Angular App</h2>
-                <img src="./img/myFlix-angular.png" alt="Screenshot of Angular myFlix App" class="responsive">
-                <p>
-                    Client-side User Interface, built using Angular CLI and Material Library for previously created
-                    server-side code (Movie Information REST API ) of a movie themed app / website which is hosted on
-                    GitHub Pages.
-                </p>
-                <div class="project-details">
-                    <h3>Technologies Used:</h3>
-                    <p>
-                        Angular CLI, Material Design, Express, Typescript.
-                    </p>
-                    <h3>Project Links:</h3>
-                    <p>
-                        <a href="https://github.com/notavailable4u/myflix-angular-client" target="_blank">Link to
-                            project source files
-                            on
-                            GitHub.</a>
-                    </p>
-                    <p>
-                        <a href="https://notavailable4u.github.io/myflix-angular-client/welcome/" target="_blank">Link
-                            to the hosted version of
-                            the app on GitHub Pages.</a>
-                    </p>
-                </div>
-            </div>
-            <!--Project 6 END-->
-        </div>
-        <!--END Grid Items-->
-    </main>
+                            app between an iPhone user (Expo Go) and an Android user (Android Studio): </p>
+                        <p>
+                            <video width="100%" height="300px" controls>
+                                <source src="./projects/native-react/chat-sample-01.mp4" type="video/mp4">
+                            </video>
+                        </p>
+                    </project-links>
+                </article>
+                <!--Project 5 END-->
+            </project-cards>
+            <!-- Project Card Section END -->
+        </main>
 
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <img src="img/github_icon.svg" alt="Github">
-            <img src="img/linkedin_logo_icon.svg" alt="LinkedIn">
-        </div>
-    </footer>
+        <section class="left-sidebar">
+            <img src="img/logo-large.png" alt="">
+            <contact-info>
+                <h2>Contact Info</h2>
+                <img src="./img/ptng-memoji.png" alt="memoji" class="responsive">
+                <p>Patrick T. N. Gannon</p>
+                <p>clnstart@protonmail.com</p>
+                <p><a href="tel:17088556742" aria-label="7 0 8. 8 5 5. 6 7 4 2">1.708.855.6742</a></p>
+                <p><a href="https://github.com/notavailable4u" target="_blank" class="fa" title="GitHub"><i class="fa fa-github"
+                    style="font-size:48px;color:#2C6E49"></i></a> <a
+                href="https://www.linkedin.com/in/patrick-g-4294b0232/" target="_blank" class="fa"><i
+                    class="fa fa-linkedin-square" style="font-size:48px;color:#2C6E49" title="LinkedIn"></i></a></p>
+            </contact-info>
+        </section>
+
+        <footer class="footer">
+            <p>Find me on</p>
+            <social-media-icons>
+                <a href="https://github.com/notavailable4u" target="_blank" class="fa" title="GitHub"><i class="fa fa-github"
+                    style="font-size:48px;color:#2C6E49"></i></a> <a
+                href="https://www.linkedin.com/in/patrick-g-4294b0232/" target="_blank" class="fa"><i
+                    class="fa fa-linkedin-square" style="font-size:48px;color:#2C6E49" title="LinkedIn"></i></a>
+            </social-media-icons>
+        </footer>
+    </layout-grid>
     <script src="js/tota11y.min.js"></script>
-
 </body>
 
 </html>
