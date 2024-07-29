@@ -222,6 +222,7 @@ layout-grid > .footer p {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    padding: 5px;
   }
   #active {
     text-decoration: underline;
