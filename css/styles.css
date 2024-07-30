@@ -157,6 +157,7 @@ layout-grid > .footer {
 
 layout-grid > .footer p {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* tablet breakpoint */
