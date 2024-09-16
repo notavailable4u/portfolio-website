@@ -290,6 +290,22 @@ layout-grid > .footer p {
   }
   /******** END Nav bar ********/
 
+  button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+    padding: 16px 16px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #70A788;
+    color: white;
+  }
+
   /******** Project Cards - Work ********/
   project-cards {
     display: grid;
