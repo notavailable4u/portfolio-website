@@ -140,6 +140,11 @@ layout-grid > .left-sidebar {
   padding-right: 2px;
 }
 
+.web-address {
+  text-align: center;
+  margin: 0;
+  background-color: #38e991;
+}
 
 .fa:hover {
     opacity: 0.7;
@@ -290,14 +295,18 @@ layout-grid > .footer p {
   }
   /******** END Nav bar ********/
 
+call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
   button {
     background-color: white; 
     color: black; 
     border: 2px solid #04AA6D;
-    padding: 16px 16px;
+    padding: 14px 14px;
     text-align: center;
     margin-left: 50px;
-    margin-top: 5px;
     border-radius: 8px;
   }
   
