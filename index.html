@@ -1,170 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Patrick T. N. Gannon</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-<body>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/dark-inner.css"
+      integrity="sha256-QjZ8+eIff5xoSUIErpJ62LOOl/CPHUE5Lc7N9wKhH1s="
+      crossorigin="anonymous"
+    />
+  </head>
 
+  <body>
     <layout-grid>
-        <header class="header">
-            <nav class="nav">
-                <input type="checkbox" id="nav-check">
-                <nav-header class="nav-header">
-                    <nav-logo class="nav-title">
-                        &lt; PTNG &#47;&gt;
-                    </nav-logo>
-                </nav-header>
-                <burger-menu class="nav-btn" role="navigation">
-                    <label for="nav-check">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                </burger-menu>
+      <header class="header">
+        <nav class="nav">
+          <input type="checkbox" id="nav-check" />
+          <nav-header class="nav-header">
+            <nav-logo class="nav-title"> &lt; PTNG &#47;&gt; </nav-logo>
+          </nav-header>
+          <burger-menu class="nav-btn" role="navigation">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </burger-menu>
 
-                <ul class="nav-list" role="navigation">
-                    <li role="navigation"><a href="index.html" role="button" tabindex="0" id="active">Home</a></li>
-                    <li role="navigation"><a href="work.html" role="button" tabindex="0">Work
-                            Samples</a></li>
-                </ul>
-            </nav>
+          <ul class="nav-list" role="navigation">
+            <li role="navigation">
+              <a href="index.html" role="button" tabindex="0" id="active"
+                >Home</a
+              >
+            </li>
+            <li role="navigation">
+              <a href="work.html" role="button" tabindex="0">Work Samples</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-content">
+       <div class="title-toggle">
+        <h1>Patrick T.N. Gannon - Portfolio Site</h1>
+        <button class="btn-toggle">Toggle Dark Mode</button>
+      </div>
+      </div>
+        <h2>About Me</h2>
+        <p>
+          My name is Patrick T. N. Gannon and this is my portfolio site. I
+          designed it with the intention of creating a pure HTML-CSS-only
+          Responsive Design, adhering to proper Semantic HTML and ARIA
+          standards.
+        </p>
+        <p>
+          I recently completed the Full Stack Web Development Program at
+          CareerFoundry and I am currently looking for an entry level developer
+          position. In addition to my Bachelor of Arts degree, Web Design
+          Diploma, and CareerFoundry certifications, I have over 20 years of
+          experience working in the Information Technology Support industry
+          covering a wide array of topics, all of which helped me hone my
+          ability to quickly and independently learn new skills and programs. I
+          am new to the Coding Industry, but a Seasoned Professional at scouring
+          the internet for solutions to troubleshoot issues and errors.
+        </p>
+        <!-- <call-to-action>
+                <button type="button">
+                    <a href="./work.html">View a sample of my work.</a>
+                </button>
+                <button>
+                    <a href="./files/Gannon-Patrick-Resume.pdf" target="_blank">View my resume in PDF Format</a>
+                </button>
+            </call-to-action> -->
 
-        </header>
+        <table class="about-table">
+          <caption>
+            Programming Languages and Experience Levels
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Skills</th>
+              <th scope="col">Years of Experience</th>
+              <th scope="col">Level of Expertise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>3</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>3</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>1</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>1</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <main class="main-content">
-            <h1>Patrick T.N. Gannon - Portfolio Site</h1>
-            <h2>About Me</h2>
-            <p>
-                My name is Patrick T. N. Gannon and this is my portfolio site. I designed it with the intention of
-                creating a pure HTML-CSS-only Responsive Design, adhering to proper Semantic HTML and ARIA standards.
-            </p>
-            <p>
-                I recently completed the Full Stack Web Development Program at CareerFoundry and I am currently looking
-                for an entry level developer position. In addition to my Bachelor of Arts degree, Web Design Diploma,
-                and CareerFoundry
-                certifications,  I have over 20 years of experience working in the Information Technology Support
-                industry covering a wide array of topics, all of which helped me hone my ability to quickly and
-                independently learn new skills and programs. I am new to the Coding Industry, but a Seasoned
-                Professional at scouring the internet for solutions to troubleshoot issues and errors.
-            </p>
-            <call-to-action>
-                <button type="button"><a href="./work.html">View a sample of my work.</a></button> <button><a
-                        href="./files/Gannon-Patrick-Resume.pdf" target="_blank">View my resume in PDF
-                        Format</a></button>
-            </call-to-action>
+        <table class="about-table">
+          <caption>
+            Cursory Experience Skills Limited to Projects Completed for Full
+            Stack Web Development Certifications
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="4" aria-colspan="4" scope="rowgroup">
+                Cursory Experience Skills
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Android-Studio</td>
+              <td>Angular</td>
+              <td>AWS CLI</td>
+              <td>AWS Lambda Functions</td>
+            </tr>
+            <tr>
+              <td>Expo / Expo Go</td>
+              <td>Express</td>
+              <td>Google Firebase</td>
+              <td>Jest</td>
+            </tr>
+            <tr>
+              <td>Material Design</td>
+              <td>OAuth2</td>
+              <td>React-Native</td>
+              <td>Typescript</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
 
-            <table class="about-table">
-                <caption>Programming Languages and Experience Levels</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Skills</th>
-                        <th scope="col">Years of Experience</th>
-                        <th scope="col">Level of Expertise</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>3</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>3</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>1</td>
-                        <td>Beginner</td>
-                   </tr>
-                    <tr>
-                        <td>React</td>
-                        <td>1</td>
-                        <td>Beginner</td>
-                    </tr>
+      <section class="left-sidebar">
+        <p class="web-address">&lt;&#47;&gt; patrickwebdev.com &lt;&#47;&gt;</p>
+        <img src="img/logo-large.png" alt="" />
+        <contact-info>
+          <h2>Contact Info</h2>
+          <img src="./img/ptng-memoji.png" alt="memoji" class="responsive" />
+          <p>Patrick T. N. Gannon</p>
+          <p>patrick@patrickwebdev.com</p>
+          <p>
+            <a
+              href="tel:17088556742"
+              aria-label="My cell phone number is 7 0 8. 8 5 5. 6 7 4 2"
+              >1.708.855.6742</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://github.com/notavailable4u"
+              target="_blank"
+              class="fa"
+              aria-label="View my GitHub Profile"
+              ><i
+                class="fa fa-github"
+                aria-hidden="true"
+                style="font-size: 48px; color: #2c6e49"
+                title="GitHub"
+              ></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/patrick-g-4294b0232/"
+              aria-label="View my LinkedIn Profile"
+              target="_blank"
+              class="fa"
+              ><i
+                class="fa fa-linkedin-square"
+                aria-hidden="true"
+                style="font-size: 48px; color: #2c6e49"
+                title="LinkedIn"
+              ></i
+            ></a>
+          </p>
+        </contact-info>
+      </section>
 
-                </tbody>
-            </table>
-
-            <table class="about-table">
-                <caption>Cursory Experience Skills Limited to Projects Completed for Full Stack Web Development Certifications</caption>
-                <thead>
-                    <tr>
-                    <th colspan="4" aria-colspan="4" scope="rowgroup">Cursory Experience Skills</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Android-Studio</td>
-                        <td>Angular</td>
-                        <td>AWS CLI</td>
-                        <td>AWS Lambda Functions</td>
-                    </tr>
-                    <tr>
-                        <td>Expo / Expo Go</td>
-                        <td>Express</td>
-                        <td>Google Firebase</td>
-                        <td>Jest</td>
-                    </tr>
-                    <tr>
-                        <td>Material Design</td>
-                        <td>OAuth2</td>
-                        <td>React-Native</td>
-                        <td>Typescript</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </main>
-
-        <section class="left-sidebar">
-            <p class="web-address">&lt;&#47;&gt; patrickwebdev.com &lt;&#47;&gt;</p>
-            <img src="img/logo-large.png" alt="">
-            <contact-info>
-                <h2>Contact Info</h2>
-                <img src="./img/ptng-memoji.png" alt="memoji" class="responsive">
-                <p>Patrick T. N. Gannon</p>
-                <p>patrick@patrickwebdev.com</p>
-                <p><a href="tel:17088556742"
-                        aria-label="My cell phone number is 7 0 8. 8 5 5. 6 7 4 2">1.708.855.6742</a></p>
-                <p><a href="https://github.com/notavailable4u" target="_blank" class="fa"
-                        aria-label="View my GitHub Profile"><i class="fa fa-github" aria-hidden="true"
-                            style="font-size:48px;color:#2C6E49" title="GitHub"></i></a>
-                    <a href="https://www.linkedin.com/in/patrick-g-4294b0232/" aria-label="View my LinkedIn Profile"
-                        target="_blank" class="fa"><i class="fa fa-linkedin-square" aria-hidden="true"
-                            style="font-size:48px;color:#2C6E49" title="LinkedIn"></i></a>
-                </p>
-            </contact-info>
-        </section>
-
-        <footer class="footer">
-            <p>Find me on</p>
-            <social-media-icons>
-                <a href="https://github.com/notavailable4u" aria-label="View my GitHub Profile" target="_blank"
-                    class="fa" title="GitHub"><i class="fa fa-github" aria-hidden="true"
-                        style="font-size:48px;color:#2C6E49"></i></a> <a
-                    href="https://www.linkedin.com/in/patrick-g-4294b0232/" aria-label="View my LinkedIn Profile"
-                    target="_blank" class="fa"><i class="fa fa-linkedin-square" aria-hidden="true"
-                        style="font-size:48px;color:#2C6E49" title="LinkedIn"></i></a>
-            </social-media-icons>
-            <p><small>&copy 2024 Patrick T. N. Gannon</small></p>
-        </footer>
+      <footer class="footer">
+        <p>Find me on</p>
+        <social-media-icons>
+          <a
+            href="https://github.com/notavailable4u"
+            aria-label="View my GitHub Profile"
+            target="_blank"
+            class="fa"
+            title="GitHub"
+            ><i
+              class="fa fa-github"
+              aria-hidden="true"
+              style="font-size: 48px; color: #2c6e49"
+            ></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/patrick-g-4294b0232/"
+            aria-label="View my LinkedIn Profile"
+            target="_blank"
+            class="fa"
+            ><i
+              class="fa fa-linkedin-square"
+              aria-hidden="true"
+              style="font-size: 48px; color: #2c6e49"
+              title="LinkedIn"
+            ></i
+          ></a>
+        </social-media-icons>
+        <p><small>&copy 2024 Patrick T. N. Gannon</small></p>
+      </footer>
     </layout-grid>
+    <script src="js/darkMode.js"></script>
     <script src="js/tota11y.min.js"></script>
-</body>
-
+  </body>
 </html>
