@@ -409,7 +409,7 @@ table:last-child {
 /******** Project Cards - Work ********/
 project-cards {
   display: grid;
-  grid-template-columns: 1f 1f;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "article article";
   gap: 20px;
 }
@@ -420,6 +420,7 @@ project-cards {
     grid-template-areas: "article";
   }
 }
+
 .card {
   display: grid;
   grid-template-areas:
