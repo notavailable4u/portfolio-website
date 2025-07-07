@@ -270,12 +270,12 @@ layout-grid > .footer p {
 }
 
 /* tablet breakpoint */
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   layout-grid {
     grid-template-columns: min-content 1fr;
     grid-template-areas:
       "header header"
-      "title toggle"
+      /* "title toggle" */
       "left-sidebar main-content"
       "footer footer";
   }
@@ -409,12 +409,12 @@ table:last-child {
 /******** Project Cards - Work ********/
 project-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "article article";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "article article article";
   gap: 20px;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 820px) {
   project-cards {
     grid-template-columns: 1fr;
     grid-template-areas: "article";
