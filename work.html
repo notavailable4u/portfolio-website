@@ -68,10 +68,53 @@
           persevere and complete a project even when given incorrect or
           deprecated information.
         </p>
+        <div class="filter">
+          <div class="show-filter"><button data-filter="all">Show All</button> Or Filter By:</div>
+          <div class="language">
+            Language: <button data-filter="html">HTML</button>
+            <button data-filter="css">CSS</button>
+            <button data-filter="javascript">JavaScript</button>
+            <button data-filter="typescript">Typescript</button>
+          </div>
+          <div class="library">
+            JavaScript Libraries: <button data-filter="react">React</button>
+            <button data-filter="react-native">React Native</button>
+            <button data-filter="bootstrap">Bootstrap</button>
+            <button data-filter="angular">Angular</button>
+          </div>
+          <div class="other">
+            Other Technologies:
+            <button tabindex="0" data-filter="android-studio">Android-Studio</button>
+            <button data-filter="api">API</button>
+            <button data-filter="aws-lambda">AWS Lambda</button>
+            <button data-filter="dotenv">Dotenv</button>
+            <button data-filter="expo">Expo</button>
+            <button data-filter="expo-go">Expo Go</button>
+            <button data-filter="express">Express</button>
+            <button data-filter="google-calendar">Google Calendar API</button>
+            <button data-filter="firebase">Google Firebase</button>
+            <button data-filter="material-design">Material Design</button>
+            <button data-filter="mern">MERN</button>
+            <button data-filter="mongodb">MongoDB</button>
+            <button data-filter="mongoose">Mongoose</button>
+            <button data-filter="node-js">Node.js</button>
+            <button data-filter="oauth2">OAuth2</button>
+            <button data-filter="parcel">Parcel</button>
+            <button data-filter="passport">Passport</button>
+            <button data-filter="postman">Postman</button>
+            <button data-filter="pwa">PWA</button>
+            <button data-filter="responsive-design">Responsive Design</button>
+            <button data-filter="rest-api">REST-API</button>
+            <button data-filter="spa">SPA</button>
+          </div>
+        </div>
         <!-- Project Card Section Begin -->
         <project-cards>
           <!--Project 1 Begin-->
-          <article class="card">
+          <article
+            class="card"
+            data-category="html css javascript bootstrap api responsive-design"
+          >
             <header-card>
               <h2 id="APIJavaScript">JavaScript App - API Data Display</h2>
             </header-card>
@@ -105,7 +148,12 @@
                 <accordion-title> Technologies Used: </accordion-title>
               </summary>
               <accordion-content>
-                <p>JavaScript ES2023, Bootstrap 5, HTML, and CSS.</p>
+                <p>
+                  <span data-tag="javascript">JavaScript ES2023</span>,
+                  <span data-tag="bootstrap">Bootstrap 5</span>,
+                  <span data-tag="html">HTML</span>, and
+                  <span data-tag="css">CSS</span>.
+                </p>
               </accordion-content>
             </details>
             <details class="accordion-item">
@@ -139,7 +187,10 @@
           </article>
           <!--Project 1 End-->
           <!--Project 2-->
-          <article class="card">
+          <article
+            class="card"
+            data-category="node-js express dotenv mongoose mongodb passport postman rest-api mern javascript"
+          >
             <header-card>
               <h2 id="mongoDB-REST-API">Movie Database - REST API</h2>
             </header-card>
@@ -203,7 +254,10 @@
           </article>
           <!--Project 2 END-->
           <!--Project 3 -->
-          <article class="card">
+          <article
+            class="card"
+            data-category="react bootstrap parcel mongodb express rest-api spa responsive-design javascript html css"
+          >
             <header-card>
               <h2 id="ReactSPA">React Single Page Application (SPA)</h2>
             </header-card>
@@ -265,7 +319,10 @@
           </article>
           <!--Project 3 END-->
           <!--Project 4 -->
-          <article class="card">
+          <article
+            class="card"
+            data-category="api pwa javascript react google-calendar responsive-design oauth2 aws-lambda html css"
+          >
             <header-card>
               <h2 id="React-PWA">React Progressive Web Application (PWA)</h2>
             </header-card>
@@ -329,7 +386,10 @@
           </article>
           <!--Project 4 END-->
           <!--Project 5 -->
-          <article class="card">
+          <article
+            class="card"
+            data-category="react react-native expo expo-go firebase android-studio html css javascript"
+          >
             <header-card>
               <h2 id="React-Native-Mobile-App">React-Native "Chat" App</h2>
             </header-card>
@@ -399,7 +459,10 @@
           </article>
           <!--Project 5 END-->
           <!--Project 6 -->
-          <article class="card">
+          <article
+            class="card"
+            data-category="angular spa express typescript responsive-design material-design html css javascript rest-api"
+          >
             <header-card>
               <h2 id="AngularSPA">Angular Single Page Application (SPA)</h2>
             </header-card>
@@ -539,6 +602,7 @@
         <p><small>&copy 2024 Patrick T. N. Gannon</small></p>
       </footer>
     </layout-grid>
+    <script src="js/filterProjects.js"></script>
     <script src="js/darkMode.js"></script>
     <script src="js/tota11y.min.js"></script>
   </body>
