@@ -32,7 +32,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  /* defaults to dark mode if user prefence is set to Dark */
+  /* defaults to dark mode if user preference is set to Dark */
   :root {
     --primary-color: #23583a;
     --secondary-color: #175934;
@@ -290,7 +290,7 @@ layout-grid > .footer p {
 
 /******** About Table ********/
 
-/* Selects the second tble on Home page */
+/* Selects the second table on Home page */
 table:last-child {
   margin-top: 50px;
 }
@@ -310,6 +310,22 @@ table:last-child {
 .about-table th {
   padding: 5px;
   background-color: var(--background-table-th);
+}
+
+.about-table td {
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.about-table ul {
+  margin-top: 0;
+  text-align: left;
+}
+
+.about-table ul li {
+  list-style-position: inside;
+  padding-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .about-table tr:nth-child(odd) {
