@@ -5,12 +5,15 @@
   --background-body: #fff;
   --background-table-th: #70a788;
   --text-color: #2b2b2b;
+  --anchor-link:var(--secondary-color);
   --visited-link: #6d2c51;
   --font-weight-headings: 700;
   --gradient-sidebar-contactInfo: linear-gradient(#70a788, #ffffff);
   --fa-icon-background: #2c6e49;
   --table-odd-row: #f2f2f2;
   --project-card-background: lightgrey;
+  --filter-btn-background: #70a788;
+  --filter-btn-background-active: #d3d3d3;
 }
 
 :root.darkMode {
@@ -19,6 +22,7 @@
   --tertiary-color: #043017;
   --background-body: #181a1b;
   --background-table-th: #23583a;
+  --anchor-link: #98e4ba;
   --text-color: #e8e6e3;
   --visited-link: #6d2c51;
   --font-weight-headings: 700;
@@ -29,6 +33,8 @@
   --fa-icon-background: #b2e6c8;
   --table-odd-row: #1f2223;
   --project-card-background: #313537;
+  --filter-btn-background: #47926b;
+  --filter-btn-background-active: #313537;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +43,7 @@
     --primary-color: #23583a;
     --secondary-color: #175934;
     --tertiary-color: #043017;
+    --anchor-link: #98e4ba;
     --background-body: #181a1b;
     --background-table-th: #23583a;
     --text-color: #e8e6e3;
@@ -48,7 +55,10 @@
     );
     --fa-icon-background: #b2e6c8;
     --table-odd-row: #1f2223;
+    --table-footer: #1f2223;
     --project-card-background: #313537;
+    --filter-btn-background: #47926b;
+    --filter-btn-background-active: #313537;
   }
   :root.lightMode {
     --primary-color: #2c6e49;
@@ -57,12 +67,16 @@
     --background-body: #fff;
     --background-table-th: #70a788;
     --text-color: #2b2b2b;
+    --anchor-link: #175934;
     --visited-link: #6d2c51;
     --font-weight-headings: 700;
     --gradient-sidebar-contactInfo: linear-gradient(#70a788, #ffffff);
     --fa-icon-background: #2c6e49;
     --table-odd-row: #f2f2f2;
+    --table-footer: #fff;
     --project-card-background: lightgrey;
+    --filter-btn-background: #47926b;
+    --filter-btn-background-active: #313537;
   }
 }
 
@@ -156,11 +170,12 @@ p {
 
 /******** Links ********/
 a:link {
-  color: var(--secondary-color);
+  color: var(--anchor-link)
 }
 
 a:visited {
-  color: var(--visited-link);
+  /* color: var(--visited-link); */
+  color: red;
 }
 
 a:hover,
@@ -331,6 +346,16 @@ table:last-child {
 .about-table tr:nth-child(odd) {
   background-color: var(--table-odd-row);
 }
+
+.about-table tfoot tr{
+  border: 1px solid #8c8273;
+}
+
+.about-table tfoot tr td {
+  padding: 0;
+}
+
+
 /******** About Table Page End ********/
 
 /******* Nav Bar *******/
@@ -513,7 +538,8 @@ details > summary {
 }
 
 .filter button {
-  background-color: #70a788;
+  background-color: var(--filter-btn-background);
+  color: var(--text-color);
   padding: 5px 7px;
   border-radius: 10px;
   border: 2px solid #d3d3d3;
@@ -537,7 +563,7 @@ details > summary {
 
 .filter button.active {
   border: 4px solid #6d2c51;
-  background-color: #d3d3d3;
+  background-color: var(--filter-btn-background-active);
 }
 
 .language {
