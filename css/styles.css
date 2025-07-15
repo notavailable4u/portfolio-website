@@ -5,7 +5,7 @@
   --background-body: #fff;
   --background-table-th: #70a788;
   --text-color: #2b2b2b;
-  --anchor-link:var(--secondary-color);
+  --anchor-link: var(--secondary-color);
   --visited-link: #6d2c51;
   --font-weight-headings: 700;
   --gradient-sidebar-contactInfo: linear-gradient(#70a788, #ffffff);
@@ -125,7 +125,7 @@
     rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
     rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
     rgba(44, 187, 99, 0.25) 0 16px 32px;
-  transform: scale(1.05) ;
+  transform: scale(1.05);
 }
 
 /************* Default Text Elements ********/
@@ -170,7 +170,7 @@ p {
 
 /******** Links ********/
 a:link {
-  color: var(--anchor-link)
+  color: var(--anchor-link);
 }
 
 a:visited {
@@ -305,56 +305,66 @@ layout-grid > .footer p {
 
 /******** About Table ********/
 
-/* Selects the second table on Home page */
-table:last-child {
-  margin-top: 50px;
-}
-
-.about-table {
+table {
   text-align: center;
   width: 100%;
   border: 1px solid #8c8273;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 
-.about-table caption {
+@media (max-width: 443px) {
+  table {
+    text-align: center;
+    width: max-content;
+    max-width: 350px;
+    height: 340px;
+    display: block;
+    border: 1px solid #8c8273;
+    overflow: auto;
+    margin: 20px auto 0;
+  }
+}
+
+table caption {
   font-weight: bold;
 }
 
-.about-table th {
+th {
   padding: 5px;
   background-color: var(--background-table-th);
+  position: sticky;
+  top: 0;
+  vertical-align: top;
 }
 
-.about-table td {
+td {
   padding-bottom: 7px;
   padding-top: 7px;
 }
 
-.about-table ul {
+table ul {
   margin-top: 0;
   text-align: left;
 }
 
-.about-table ul li {
+table ul li {
   list-style-position: inside;
   padding-bottom: 5px;
   margin-bottom: 4px;
 }
 
-.about-table tr:nth-child(odd) {
+tr:nth-child(odd) {
   background-color: var(--table-odd-row);
 }
 
-.about-table tfoot tr{
+tfoot tr {
   border: 1px solid #8c8273;
 }
 
-.about-table tfoot tr td {
+tfoot tr td {
   padding: 0;
 }
-
 
 /******** About Table Page End ********/
 
@@ -462,7 +472,6 @@ project-cards {
   }
 }
 
-
 .card {
   visibility: hidden;
   display: grid;
@@ -549,7 +558,7 @@ details > summary {
   font-family: "Roboto", "Segoe UI", sans-serif;
   font-size: 1.25rem;
   text-align: center;
-  }
+}
 
 .filter button:hover {
   transform: scale(1.05);
@@ -558,7 +567,6 @@ details > summary {
 
 .filter button:focus {
   border: 4px solid #d3d3d3;
-
 }
 
 .filter button.active {
@@ -581,7 +589,7 @@ details > summary {
 }
 
 .other {
-    border: 1px solid #456f5d;
+  border: 1px solid #456f5d;
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
