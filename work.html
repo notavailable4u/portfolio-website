@@ -68,14 +68,8 @@
         </div>
         <h2>Work Samples</h2>
         <p>
-          All of these projects were created as part of the curriculum for the
-          Full Stack Web Development Program at Career Foundry. I usually tell
-          people I learned how to code <em>despite</em> attending Career
-          Foundry, by which I mean, I was able to complete these projects by
-          seeking the correct information from other sources on the internet. On
-          the positive side, the experience taught me that I have the ability to
-          persevere and complete a project even when given incorrect or
-          deprecated information. I continue to take courses and participate in independent projects to update and develop my web development skills. View a <a href="./certifications.html">list of my certifications</a>.
+          These are projects that were created as part of the curriculum for the
+          Full Stack Web Development Program at Career Foundry and independent projects I have been working on since completing the program. I continue to take courses and participate in independent projects to update and develop my web development skills. View a <a href="./certifications.html">list of my certifications</a>.
         </p>
         <div class="filter">
           <div><button data-filter="all">Show All</button> Or Filter By:</div>
@@ -83,13 +77,12 @@
             Language: <button data-filter="html">HTML</button>
             <button data-filter="css">CSS</button>
             <button data-filter="javascript">JavaScript</button>
-            <button data-filter="typescript">Typescript</button>
           </div>
           <div class="library">
-            JavaScript Libraries: <button data-filter="react">React</button>
+            Libraries: <button data-filter="react">React</button>
             <button data-filter="react-native">React Native</button>
+            <button data-filter="tailwind">Tailwind CSS</button>
             <button data-filter="bootstrap">Bootstrap</button>
-            <button data-filter="angular">Angular</button>
           </div>
           <div class="other">
             Other Technologies:
@@ -100,6 +93,7 @@
             <button data-filter="expo">Expo</button>
             <button data-filter="expo-go">Expo Go</button>
             <button data-filter="express">Express</button>
+            <button data-filter="figma">Figma</button>
             <button data-filter="google-calendar">Google Calendar API</button>
             <button data-filter="firebase">Google Firebase</button>
             <button data-filter="material-design">Material Design</button>
@@ -115,10 +109,76 @@
             <button data-filter="responsive-design">Responsive Design</button>
             <button data-filter="rest-api">REST-API</button>
             <button data-filter="spa">SPA</button>
+            <button data-filter="vite">Vite</button>
           </div>
         </div>
         <!-- Project Card Section Begin -->
         <project-cards>
+           <!--Project 0 Begin-->
+                     <article
+            class="card"
+            data-category="html tailwind javascript react figma vite responsive-design"
+          >
+            <header-card>
+              <h2 id="reactTailwindComponent">React 19 - Tailwind CSS - Testimony Card Component</h2>
+            </header-card>
+            <screen-shot>
+              <img
+                src="./img/blueLightDark.png"
+                alt="Screenshot of Testimony Card Blue Theme in Light and Dark Mode"
+              />
+            </screen-shot>
+            <project-summary>
+              <details class="accordion-item">
+                <summary>
+                  <accordion-title> Project Summary: </accordion-title>
+                </summary>
+                <accordion-content>
+                  <p>
+                    This project was based on a <a href="https://www.greatfrontend.com/projects/challenges/testimonial-card" target="_blank">GreatFrontEnd project to develop a single Testimony Card based on the Figma Design specifications </a>. I created this component, which builds on that concept by adding the ability to generate multiple cards at once, with three choices for color theme, because I wanted to try out the new Form features in React 19 and to practice using Tailwind CSS and building projects with Vite.
+                  </p>
+                </accordion-content>
+              </details>
+            </project-summary>
+            <details class="accordion-item">
+              <summary class="accordion-trigger">
+                <accordion-title> Technologies Used: </accordion-title>
+              </summary>
+              <accordion-content>
+                <p>
+                  <span data-tag="react">React v 19</span>,
+                  <span data-tag="tailwind">Tailwind CSS</span>,
+                  <span data-tag="vite">Vite</span>
+                </p>
+              </accordion-content>
+            </details>
+            <details class="accordion-item">
+              <summary class="accordion-trigger">
+                <accordion-title> Project Links: </accordion-title>
+              </summary>
+              <accordion-content>
+                <p>
+                  <a
+                    href="https://notavailable4u.github.io/testimony-card-component"
+                    role="button"
+                    >View the live version of the component hosted on GitHub Pages.</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://github.com/notavailable4u/testimony-card-component"
+                    target="_blank"
+                    role="button"
+                    >Link to project source files on hosted GitHub.</a
+                  >
+                </p>
+              </accordion-content>
+            </details>
+          </article>
+
+          <!--Project 0 End-->
+
           <!--Project 1 Begin-->
           <article
             class="card"
@@ -467,69 +527,7 @@
             </details>
           </article>
           <!--Project 5 END-->
-          <!--Project 6 -->
-          <article
-            class="card"
-            data-category="angular spa express typescript responsive-design material-design html css javascript rest-api"
-          >
-            <header-card>
-              <h2 id="AngularSPA">Angular Single Page Application (SPA)</h2>
-            </header-card>
-            <screen-shot>
-              <img
-                src="./img/myFlix-angular.png"
-                alt="Screenshot of Angular myFlix App"
-                class="responsive"
-              />
-            </screen-shot>
-            <project-summary>
-              <details class="accordion-item">
-                <summary>
-                  <accordion-title> Project Summary: </accordion-title>
-                </summary>
-                <accordion-content>
-                  <p>
-                    Client-side User Interface, built using Angular CLI and
-                    Material Library for previously created server-side code
-                    (Movie Information REST API ) of a movie themed app /
-                    website which is hosted on GitHub Pages.
-                  </p>
-                </accordion-content>
-              </details>
-            </project-summary>
-            <details class="accordion-item">
-              <summary class="accordion-trigger">
-                <accordion-title> Technologies Used: </accordion-title>
-              </summary>
-              <accordion-content>
-                <p>Angular CLI, Material Design, Express, Typescript.</p>
-              </accordion-content>
-            </details>
-            <details class="accordion-item">
-              <summary class="accordion-trigger">
-                <accordion-title> Project Links: </accordion-title>
-              </summary>
-              <accordion-content>
-                <p>
-                  <a
-                    href="https://github.com/notavailable4u/myflix-angular-client"
-                    target="_blank"
-                    role="button"
-                    >Link to project source files on GitHub.</a
-                  >
-                </p>
-                <p>
-                  <a
-                    href="https://notavailable4u.github.io/myflix-angular-client/welcome/"
-                    target="_blank"
-                    role="button"
-                    >Link to the hosted version of the app on GitHub Pages.</a
-                  >
-                </p>
-              </accordion-content>
-            </details>
-          </article>
-          <!--Project 6 End -->
+
         </project-cards>
         <!-- Project Card Section END -->
       </main>
