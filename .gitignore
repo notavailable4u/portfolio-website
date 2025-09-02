@@ -56,3 +56,6 @@ stylelint.config.js
 .flaskenv*
 !.env.project
 !.env.vault
+
+#template folder#
+templates
