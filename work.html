@@ -50,10 +50,7 @@
               >
             </li>
             <li role="navigation">
-              <a
-                href="certifications.html"
-                role="button"
-                tabindex="0"
+              <a href="certifications.html" role="button" tabindex="0"
                 >Certifications</a
               >
             </li>
@@ -69,7 +66,11 @@
         <h2>Work Samples</h2>
         <p>
           These are projects that were created as part of the curriculum for the
-          Full Stack Web Development Program at Career Foundry as well as independent projects I have been working on since completing the program. I continue to take courses and participate in independent projects to update and develop my web development skills. View a <a href="./certifications.html">list of my certifications</a>.
+          Full Stack Web Development Program at Career Foundry as well as
+          independent projects I have been working on since completing the
+          program. I continue to take courses and participate in independent
+          projects to update and develop my web development skills. View a
+          <a href="./certifications.html">list of my certifications</a>.
         </p>
         <div class="filter">
           <div><button data-filter="all">Show All</button> Or Filter By:</div>
@@ -77,6 +78,7 @@
             Language: <button data-filter="html">HTML</button>
             <button data-filter="css">CSS</button>
             <button data-filter="javascript">JavaScript</button>
+            <button data-filter="typescript">Typescript</button>
           </div>
           <div class="library">
             Libraries: <button data-filter="react">React</button>
@@ -86,7 +88,9 @@
           </div>
           <div class="other">
             Other Technologies:
-            <button tabindex="0" data-filter="android-studio">Android-Studio</button>
+            <button tabindex="0" data-filter="android-studio">
+              Android-Studio
+            </button>
             <button data-filter="api">API</button>
             <button data-filter="aws-lambda">AWS Lambda</button>
             <button data-filter="dotenv">Dotenv</button>
@@ -94,9 +98,10 @@
             <button data-filter="expo-go">Expo Go</button>
             <button data-filter="express">Express</button>
             <button data-filter="figma">Figma</button>
+            <button data-filter="google-ai-studio">Google AI Studio</button>
             <button data-filter="google-calendar">Google Calendar API</button>
             <button data-filter="firebase">Google Firebase</button>
-            <button data-filter="material-design">Material Design</button>
+            <button data-filter="google-gemini">Google Gemini</button>
             <button data-filter="mern">MERN</button>
             <button data-filter="mongodb">MongoDB</button>
             <button data-filter="mongoose">Mongoose</button>
@@ -109,18 +114,115 @@
             <button data-filter="responsive-design">Responsive Design</button>
             <button data-filter="rest-api">REST-API</button>
             <button data-filter="spa">SPA</button>
+            <button data-filter="vibe-coding">Vibe Coding</button>
             <button data-filter="vite">Vite</button>
           </div>
         </div>
         <!-- Project Card Section Begin -->
         <project-cards>
-           <!--Project 1 Begin-->
-                     <article
+          <article
+            class="card"
+            data-category="html css tailwind javascript react typescript vite responsive-design node-js vibe-coding google-gemini google-ai-studio"
+          >
+            <header-card>
+              <h2 id="memojAI">
+                A Memoji Generating App Created With a Google AI Prompt
+              </h2>
+            </header-card>
+            <screen-shot>
+              <img
+                src="./img/memoji-screenshot.png"
+                alt="Screenshot of Google AI Studio generated Memoji App"
+              />
+            </screen-shot>
+            <project-summary>
+              <details class="accordion-item">
+                <summary>
+                  <accordion-title> Project Summary: </accordion-title>
+                </summary>
+                <accordion-content>
+                  <p>
+                    This project was my first experiment with AI programming and
+                    inspired DEV community's
+                    <a
+                      href="https://dev.to/deved/build-apps-with-google-ai-studio?bb=238782"
+                      target="_blank"
+                      >"Build Apps with Google AI Studio" Education Track.</a
+                    >
+                  </p>
+                  <p>
+                    The assignment: Use the Build feature in Google AI Studio to
+                    build an app that incorporates image generation with the
+                    Imagen API.
+                  </p>
+                  <p>
+                    For the app concept, I thought it would be fun to build an
+                    app that was able to create a Memoji based on a photograph
+                    of your choosing.
+                  </p>
+                  <p>
+                    Other than a few minor CSS corrections, all of the code for
+                    this app was generated by<a
+                      href="https://ai.google.dev/aistudio"
+                      target="_blank"
+                      >Google AI Studio</a
+                    >'s Build Feature from a single initiating prompt I
+                    provided.
+                  </p>
+                </accordion-content>
+              </details>
+            </project-summary>
+            <details class="accordion-item">
+              <summary class="accordion-trigger">
+                <accordion-title> Technologies Used: </accordion-title>
+              </summary>
+              <accordion-content>
+                <p>
+                  <span data-tag="google-ai-studio">Google AI Studio,</span>
+                  <span data-tag="google-gemini">Google Gemini API,</span>
+                  <span data-tag="react">React (version 19),</span>
+                  <span data-tag="tailwind">TailwindCSS,</span>
+                  <span data-tag="vite">Vite,</span>
+                  <span data-tag="typescript">Typescript</span>
+                </p>
+              </accordion-content>
+            </details>
+            <details class="accordion-item">
+              <summary class="accordion-trigger">
+                <accordion-title> Project Links: </accordion-title>
+              </summary>
+              <accordion-content>
+                <p>
+                  <a
+                    href="https://notavailable4u.github.io/memoji-magic-ai/"
+                    role="button"
+                    >View the live demo version of the app hosted on GitHub
+                    Pages.</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://github.com/notavailable4u/memoji-magic-ai"
+                    target="_blank"
+                    role="button"
+                    >Link to project source files on hosted GitHub.</a
+                  >
+                </p>
+                <p><a href="https://dev.to/notavailable4u/memoji-magic-ai-a-memoji-generating-app-created-by-a-single-prompt-to-google-ai-studios-new-1adp" target="_blank">Link to my post on Dev website regarding the creation of this app</a></p>
+              </accordion-content>
+            </details>
+          </article>
+
+          <!--Project 1 Begin-->
+          <article
             class="card"
             data-category="html tailwind javascript react figma vite responsive-design"
           >
             <header-card>
-              <h2 id="reactTailwindComponent">React 19 - Tailwind CSS - Testimony Card Component</h2>
+              <h2 id="reactTailwindComponent">
+                React 19 - Tailwind CSS - Testimony Card Component
+              </h2>
             </header-card>
             <screen-shot>
               <img
@@ -135,8 +237,20 @@
                 </summary>
                 <accordion-content>
                   <p>
-                    This project was based on a <a href="https://www.greatfrontend.com/projects/challenges/testimonial-card" target="_blank">GreatFrontEnd project to develop a single Testimony Card based on the Figma Design specifications </a>.</p>
-                    <p> I created this component, which builds on that concept by adding the ability to generate multiple cards at once, with three choices for color theme, because I wanted to try out the new Form features in React 19 and to practice using Tailwind CSS and building projects with Vite.
+                    This project was based on a
+                    <a
+                      href="https://www.greatfrontend.com/projects/challenges/testimonial-card"
+                      target="_blank"
+                      >GreatFrontEnd project to develop a single Testimony Card
+                      based on the Figma Design specifications </a
+                    >.
+                  </p>
+                  <p>
+                    I created this component, which builds on that concept by
+                    adding the ability to generate multiple cards at once, with
+                    three choices for color theme, because I wanted to try out
+                    the new Form features in React 19 and to practice using
+                    Tailwind CSS and building projects with Vite.
                   </p>
                 </accordion-content>
               </details>
@@ -150,7 +264,9 @@
                   <span data-tag="react">React (version 19),</span>
                   <span data-tag="tailwind">TailwindCSS,</span>
                   <span data-tag="vite">Vite,</span>
-                  <span data-tag="figma">Figma (implementing designs from Figma)</span>
+                  <span data-tag="figma"
+                    >Figma (implementing designs from Figma)</span
+                  >
                 </p>
               </accordion-content>
             </details>
@@ -163,7 +279,8 @@
                   <a
                     href="https://notavailable4u.github.io/testimony-card-component"
                     role="button"
-                    >View the live version of the component hosted on GitHub Pages.</a
+                    >View the live version of the component hosted on GitHub
+                    Pages.</a
                   >
                 </p>
 
@@ -178,7 +295,6 @@
               </accordion-content>
             </details>
           </article>
-
           <!--Project 1 End-->
 
           <!--Project 2 Begin-->
@@ -529,7 +645,6 @@
             </details>
           </article>
           <!--Project 6 END-->
-
         </project-cards>
         <!-- Project Card Section END -->
       </main>
