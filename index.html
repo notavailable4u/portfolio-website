@@ -1,273 +1,209 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Patrick T. N. Gannon</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/dark-inner.css"
-      integrity="sha256-QjZ8+eIff5xoSUIErpJ62LOOl/CPHUE5Lc7N9wKhH1s="
-      crossorigin="anonymous"
-    />
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Frontend Developer — Patrick Gannon’s frontend portfolio, React projects, and training."><title>Frontend Developer | Patrick T. N. Gannon</title><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/styles.css"><script src="js/darkMode.js" defer></script>
   </head>
-
   <body>
-    <layout-grid>
-      <header class="header">
-        <nav class="nav">
-          <input type="checkbox" id="nav-check" />
-          <nav-header class="nav-header">
-            <nav-logo class="nav-title"> &lt; PTNG &#47;&gt; </nav-logo>
-          </nav-header>
-          <burger-menu class="nav-btn" role="navigation">
-            <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </burger-menu>
-
-          <ul class="nav-list" role="navigation">
-            <li role="navigation">
-              <a href="index.html" role="button" tabindex="0" id="active"
-                >Home</a
-              >
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <div class="header-inner">
+        <a class="brand" href="index.html"><span aria-hidden="true">&lt;/&gt;</span> Patrick Gannon</a>
+        <nav aria-label="Primary">
+          <ul>
+            <li>
+              <a href="index.html" aria-current="page">Home</a>
             </li>
-            <li role="navigation">
-              <a href="work.html" role="button" tabindex="0">Work Samples</a>
+            <li>
+              <a href="work.html">Work Samples</a>
             </li>
-            <li role="navigation">
-              <a href="certifications.html" role="button" tabindex="0"
-                >Certifications</a
-              >
+            <li>
+              <a href="certifications.html">Education &amp; Training</a>
             </li>
           </ul>
         </nav>
-      </header>
-      <main class="main-content">
-        <div class="title-toggle">
-          <h1>Patrick T.N. Gannon - Portfolio Site</h1>
-          <button class="btn-toggle">Toggle Dark Mode</button>
+        <button class="btn-toggle" type="button" aria-pressed="false" hidden>Dark theme</button>
+      </div>
+    </header>
+    <main class="container" id="main" tabindex="-1">
+      <section class="hero">
+        <p class="eyebrow">
+          Patrick T. N. Gannon / Frontend Developer
+        </p>
+        <h1>
+          Building for the web.<br><span>Thinking about the user.</span>
+        </h1>
+        <p class="intro">
+          I build responsive interfaces with React, JavaScript, HTML, and CSS. After more than two decades in IT support, I’m bringing a practical approach to troubleshooting and helping people into frontend development.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="work.html">Explore my work ↗</a><a class="button" href="mailto:patrick@patrickwebdev.com">Get in touch</a>
         </div>
-        <h2>About Me</h2>
-        <p>
-          My name is Patrick T. N. Gannon and this is my portfolio site. I
-          designed it with the intention of creating an HTML-CSS, Responsive
-          Design website with minimal JavaScript, that adheres to proper
-          Semantic HTML and ARIA standards.
+        <p class="availability">
+          Seeking an entry-level frontend role
         </p>
-        <p>
-          I first learned HTML and CSS in 2007 (Web Design Diploma) and, after
-          more than two decades in Information Technology (I.T.) Support, I
-          decided to transition into Web Development exclusively. In 2024, I
-          completed a Full Stack Web Development certification program and have
-          been building responsive websites and web apps using HTML, CSS,
-          JavaScript, and React, as well as continuing to take classes to
-          further improve my skills, ever since.
-          <a href="./certifications.html"
-            >View a full list of my Course Completion Certifications.</a
-          >
-        </p>
-        <p>
-          In addition to honing my ability to quickly and independently learn
-          new skills, my I.T. Support background gives me a unique advantage: I
-          understand both the technical and human side of software. I’m
-          comfortable supporting users, troubleshooting complex problems, and
-          writing clean, efficient front-end code. I love taking on new
-          challenges, learning new tools, and bringing order and usability to
-          digital spaces (and physical spaces too !😜).
-        </p>
-        <p>
-          I am currently seeking an entry-level Frontend role where I can
-          contribute meaningfully, keep learning, and grow as a developer.
-        </p>
-        <table>
-          <caption>
-            Core Programming Languages and Experience Levels
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Skills</th>
-              <th scope="col">Years Actively Writing or Maintaining code</th>
-              <th scope="col">Timeline</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HTML / CSS</td>
-              <td>&#8773;5</td>
-              <td>
-                <ul>
-                  <li>2007 earned Web Design diploma</li>
-                  <li>2007-2023 minimal HTML/CSS use in IT Support role</li>
-                  <li>
-                    9/2023 - 9/2024 Full Time Student Full Stack Certification
-                  </li>
-                  <li>9/2024 - present</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>2</td>
-              <td>
-                <ul>
-                  <li>
-                    9/2023 - 9/2024 Full Time Student Full Stack Certification
-                  </li>
-                  <li>9/2024 - present</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td>2</td>
-              <td>
-                <ul>
-                  <li>
-                    9/2023 - 9/2024 Full Time Student Full Stack Certification
-                  </li>
-                  <li>9/2024 - present</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table>
-          <caption>
-            Additional Skills Limited to Projects Completed for Full Stack Web
-            Development Certification
-          </caption>
-          <thead>
-            <tr>
-              <th colspan="4" aria-colspan="4" scope="rowgroup">
-                Cursory Experience Skills
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Android-Studio</td>
-              <td>Angular</td>
-              <td>AWS CLI</td>
-              <td>AWS Lambda Functions</td>
-            </tr>
-            <tr>
-              <td>Expo / Expo Go</td>
-              <td>Express</td>
-              <td>Google Firebase</td>
-              <td>Jest</td>
-            </tr>
-            <tr>
-              <td>Material Design</td>
-              <td>OAuth2</td>
-              <td>React-Native</td>
-              <td>Typescript</td>
-            </tr>
-          </tbody>
-        </table>
-      </main>
-
-      <section class="left-sidebar">
-        <p class="web-address">&lt;&#47;&gt; patrickwebdev.com &lt;&#47;&gt;</p>
-        <img src="img/logo-large.png" alt="" />
-        <contact-info>
-          <h2>Contact Info</h2>
-          <img
-            src="./img/memoj-ai-generated.jpg"
-            alt="memoji"
-            class="responsive"
-          />
-          <p>Patrick T. N. Gannon</p>
-          <p>patrick@patrickwebdev.com</p>
-          <p>
-            <a
-              href="tel:17088556742"
-              aria-label="My cell phone number is 7 0 8. 8 5 5. 6 7 4 2"
-              >1.708.855.6742</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://github.com/notavailable4u"
-              target="_blank"
-              class="fa"
-              aria-label="View my GitHub Profile"
-              ><i
-                class="fa fa-github"
-                aria-hidden="true"
-                style="font-size: 48px; color: #2c6e49"
-                title="GitHub"
-              ></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/patrick-g-4294b0232/"
-              aria-label="View my LinkedIn Profile"
-              target="_blank"
-              class="fa"
-              ><i
-                class="fa fa-linkedin-square"
-                aria-hidden="true"
-                style="font-size: 48px; color: #2c6e49"
-                title="LinkedIn"
-              ></i
-            ></a>
-          </p>
-        </contact-info>
       </section>
-
-      <footer class="footer">
-        <p>Find me on</p>
-        <social-media-icons>
-          <a
-            href="https://github.com/notavailable4u"
-            aria-label="View my GitHub Profile"
-            target="_blank"
-            class="fa"
-            title="GitHub"
-            ><i
-              class="fa fa-github"
-              aria-hidden="true"
-              style="font-size: 48px; color: #2c6e49"
-            ></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/patrick-g-4294b0232/"
-            aria-label="View my LinkedIn Profile"
-            target="_blank"
-            class="fa"
-            ><i
-              class="fa fa-linkedin-square"
-              aria-hidden="true"
-              style="font-size: 48px; color: #2c6e49"
-              title="LinkedIn"
-            ></i
-          ></a>
-        </social-media-icons>
-        <p><small>&copy 2024 Patrick T. N. Gannon</small></p>
-      </footer>
-    </layout-grid>
-    <script src="js/darkMode.js"></script>
+      <section class="split-section" aria-labelledby="about">
+        <div>
+          <p class="eyebrow">
+            A practical foundation
+          </p>
+          <h2 id="about">
+            About Me
+          </h2>
+        </div>
+        <div class="prose">
+          <p>
+            My path to development started with a Web Design Diploma in 2007. I completed CareerFoundry’s Full Stack Web Development qualification in September 2024 and now focus on frontend work with React.
+          </p>
+          <p>
+            In IT support, I learned to listen to users, investigate problems, and learn unfamiliar systems. I bring those habits to development: working through issues methodically and considering how an interface will be used.
+          </p>
+          <p>
+            My recent projects include a weather app using the Open-Meteo API and a configurable testimony card component. I’m continuing to develop my React skills through projects and coursework.
+          </p>
+          <a href="certifications.html">Explore my education &amp; training →</a>
+        </div>
+      </section>
+      <section class="split-section contribution-section" aria-labelledby="open-source">
+        <div>
+          <p class="eyebrow">Community collaboration</p>
+          <h2 id="open-source">Open Source Contribution</h2>
+        </div>
+        <article class="prose" aria-labelledby="freecodecamp-contribution">
+          <h3 id="freecodecamp-contribution">freeCodeCamp — Open Source Contributor</h3>
+          <p><time datetime="2026-09">September 2026</time> | GitHub: <a href="https://github.com/notavailable4u" target="_blank" rel="noopener noreferrer">notavailable4u</a></p>
+          <ul class="contribution-list">
+            <li>Contributed four merged pull requests adding descriptive Markdown section headings to React and JavaScript curriculum lessons to improve organization and readability.</li>
+            <li>Collaborated with maintainers through GitHub pull requests, incorporated review feedback, and followed project contribution guidelines and lesson-specific submission workflows.</li>
+          </ul>
+          <div class="contribution-prs">
+            <h4>Pull requests</h4>
+            <ul class="contribution-list">
+              <li><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/70405" target="_blank" rel="noopener noreferrer">#70405 — Add section headers to the default and named exports lesson</a></li>
+              <li><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/70403" target="_blank" rel="noopener noreferrer">#70403 — Add section headers to the Debug with React DevTools lesson</a></li>
+              <li><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/70401" target="_blank" rel="noopener noreferrer">#70401 — Add section headers to the custom React hook lesson</a></li>
+              <li><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/69920" target="_blank" rel="noopener noreferrer">#69920 — Add section headers to a curriculum lecture</a></li>
+              <li><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/70357" target="_blank" rel="noopener noreferrer">Pull request #70357 on freeCodeCamp</a></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="section" aria-labelledby="skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              Skills in context
+            </p>
+            <h2 id="skills">
+              What I work with
+            </h2>
+          </div>
+          <p>
+            Grounded in the projects in this portfolio.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <section>
+            <span class="number" aria-hidden="true">01</span>
+            <h3>
+              Core Skills
+            </h3>
+            <ul>
+              <li>
+                React &amp; JavaScript
+              </li>
+              <li>
+                HTML &amp; CSS
+              </li>
+              <li>
+                Responsive layouts
+              </li>
+              <li>
+                REST API integration
+              </li>
+            </ul>
+            <p>
+              Applied in <a href="work.html#weatherApp">Weather App</a>, <a href="work.html#reactTailwindComponent">Testimony Card</a>, and <a href="work.html#ReactSPA">myFlix React</a>.
+            </p>
+          </section>
+          <section>
+            <span class="number" aria-hidden="true">02</span>
+            <h3>
+              Additional Project Experience
+            </h3>
+            <ul>
+              <li>
+                Tailwind CSS, Bootstrap &amp; Vite
+              </li>
+              <li>
+                Node.js, Express &amp; MongoDB
+              </li>
+              <li>
+                React Native, Expo &amp; Firebase
+              </li>
+              <li>
+                Jest, OAuth2 &amp; AWS Lambda
+              </li>
+            </ul>
+            <p>
+              Used in component work and Full Stack coursework: the <a href="work.html#mongoDB-REST-API">Movie API</a>, <a href="work.html#React-Native-Mobile-App">Chat App</a>, and <a href="work.html#React-PWA">Meet PWA</a>.
+            </p>
+          </section>
+          <section>
+            <span class="number" aria-hidden="true">03</span>
+            <h3>
+              Currently Developing
+            </h3>
+            <ul>
+              <li>
+                React forms &amp; component design
+              </li>
+              <li>
+                Implementing Figma designs
+              </li>
+              <li>
+                Responsive UI refinement
+              </li>
+              <li>
+                Accessible web interfaces
+              </li>
+            </ul>
+            <p>
+              Building on the <a href="work.html#reactTailwindComponent">React 19 card project</a>, <a href="work.html#weatherApp">Weather App</a>, and <a href="certifications.html#coursework">accessibility coursework</a>.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="contact-strip">
+        <div>
+          <p class="eyebrow">
+            Let’s connect
+          </p>
+          <h2>
+            Have a frontend opportunity?
+          </h2>
+          <p>
+            I’d welcome a conversation about your team.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:patrick@patrickwebdev.com">Email Patrick ↗</a>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <strong>Patrick T. N. Gannon</strong>
+          <p>
+            Frontend development · React · JavaScript
+          </p>
+        </div>
+        <address>
+          <a href="mailto:patrick@patrickwebdev.com">patrick@patrickwebdev.com</a><a href="tel:17088556742">1.708.855.6742</a>
+        </address>
+        <div class="footer-links">
+          <a href="https://github.com/notavailable4u" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/patrick-g-4294b0232/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
