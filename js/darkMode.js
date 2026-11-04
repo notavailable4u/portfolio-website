@@ -1,26 +1,22 @@
-const btn = document.querySelector(".btn-toggle");
-//Check for dark mode OS preference 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-//Get user's theme from local storage
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-    document.documentElement.classList.toggle("darkMode");
-} else if (currentTheme == "light") {
-    document.documentElement.classList.toggle("lightMode");
-}
-
-btn.addEventListener("click", function () {
-    if (prefersDarkScheme.matches) {
-        document.documentElement.classList.toggle("lightMode");
-        let theme = document.documentElement.classList.contains("lightMode")
-            ? "light"
-            : "dark";
-    } else {
-        document.documentElement.classList.toggle("darkMode");
-        let theme = document.documentElement.classList.contains("dark-theme")
-            ? "dark"
-            : "light";
-    }
-    localStorage.setItem("theme", theme);
-});
+(() => {
+  const button = document.querySelector('.btn-toggle');
+  const preference = window.matchMedia('(prefers-color-scheme: dark)');
+  let saved;
+  try { saved = localStorage.getItem('theme'); } catch { /* Storage is optional. */ }
+  let explicit = saved === 'light' || saved === 'dark';
+  function apply(theme) {
+    document.documentElement.dataset.theme = theme;
+    if (button) button.setAttribute('aria-pressed', String(theme === 'dark'));
+  }
+  apply(explicit ? saved : preference.matches ? 'dark' : 'light');
+  if (button) {
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      explicit = true;
+      apply(theme);
+      try { localStorage.setItem('theme', theme); } catch { /* Keep this page's theme. */ }
+    });
+  }
+  preference.addEventListener('change', event => { if (!explicit) apply(event.matches ? 'dark' : 'light'); });
+})();
