@@ -1,6 +1,6 @@
 # Patrick Gannon — Portfolio
 
-A static portfolio built with HTML, CSS, and JavaScript. The current redesign is a local first draft on `redesignNov26`.
+A static portfolio built with HTML, CSS, and JavaScript. 
 
 ## Preview locally
 
