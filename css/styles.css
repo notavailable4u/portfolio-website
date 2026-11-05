@@ -513,6 +513,13 @@ address {
   display:flex;
   gap:1.2rem
 }
+.footer-nav {
+  margin-top:1rem;
+  padding-block:0
+}
+.footer-nav a {
+  padding-block:0
+}
 
 @media(max-width:1000px) {
   .header-inner {
